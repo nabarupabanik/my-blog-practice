@@ -1,3 +1,8 @@
+/* Quick fix: add margin to header */
+header {
+    margin-bottom: 20px;
+  }
+  
 /* main styles */
 
 /* Subscribe button styles */
