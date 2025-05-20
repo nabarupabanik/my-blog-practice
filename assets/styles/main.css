@@ -1,1 +1,21 @@
 /* main styles */
+/* Dark theme overrides */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode a {
+    color: #bb86fc;
+  }
+  
+  /* Optionally, dark mode for the subscribe button */
+  body.dark-mode .subscribe-button {
+    background-color: #3700b3;
+    color: white;
+  }
+  
+  body.dark-mode .subscribe-button:hover {
+    background-color: #6200ee;
+  }
+  
