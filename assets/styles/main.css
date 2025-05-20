@@ -39,4 +39,15 @@ header {
   body.dark-mode .subscribe-button:hover {
     background-color: #6200ee;
   }
-  
+  /* Footer widgets styles */
+.footer-widgets {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  .footer-widgets a {
+    color: #007bff;
+    text-decoration: none;
+  }
+    
