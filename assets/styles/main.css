@@ -1,6 +1,22 @@
 /* main styles */
-/* Dark theme overrides */
-body.dark-mode {
+
+/* Subscribe button styles */
+.subscribe-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dark theme overrides */
+  body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
   }
@@ -9,7 +25,7 @@ body.dark-mode {
     color: #bb86fc;
   }
   
-  /* Optionally, dark mode for the subscribe button */
+  /* Dark theme for subscribe button */
   body.dark-mode .subscribe-button {
     background-color: #3700b3;
     color: white;
