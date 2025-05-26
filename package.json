@@ -1,4 +1,6 @@
 {
-  "name": "my-python-project",
-  "version": "0.1.0"
+  "name": "your-python-project",
+  "version": "1.0.0",
+  "description": "Your Python project",
+  "private": true
 }
