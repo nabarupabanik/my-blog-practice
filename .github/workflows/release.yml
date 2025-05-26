@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Klemensas/action-autotag@stable
+      - uses: Klemensas/action-autotag@v1.0.0  # Use stable v1.0.0
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          package_root: "."  # Root directory where pyproject.toml/setup.py lives
