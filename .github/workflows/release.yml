@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Klemensas/action-autotag@stable
+      - uses: mathieudutour/github-tag-action@v6.1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Required here
+          custom_tag: "v${{ github.ref_version }}"  # Optional: formats tag as v1.0.0
