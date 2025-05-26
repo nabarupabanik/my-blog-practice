@@ -2,11 +2,16 @@ name: Auto-Tag Release
 on:
   push:
     branches: [main]
+
 jobs:
   tag:
     runs-on: ubuntu-latest
+    permissions:  # Add this block
+      contents: write  # Required to create tags
     steps:
       - uses: actions/checkout@v4
-      - uses: mathieudutour/github-tag-action@v6.1  # Works with any version file
+        with:
+          fetch-depth: 0  # Required for tag operations
+      - uses: mathieudutour/github-tag-action@v6.1  # More reliable alternative
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
