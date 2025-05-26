@@ -1,4 +1,4 @@
-name: Auto Tag Release
+name: Auto-Tag Release
 
 on:
   push:
@@ -9,11 +9,8 @@ jobs:
   tag:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Create tag
-        uses: mathieudutour/github-tag-action@v6.1
+      - uses: actions/checkout@v4
+      
+      - uses: Klemensas/action-autotag@stable
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          default_bump: patch
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
