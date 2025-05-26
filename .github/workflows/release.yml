@@ -1,15 +1,12 @@
 name: Auto-Tag Release
 on:
-  push:
-    branches: [main]
+push:
+branches: [ main ]
 jobs:
-  tag:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write  # Required to create tags
-    steps:
-      - uses: actions/checkout@v4
-      - uses: Klemensas/action-autotag@stable
-        with:
-          package_root: "."
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Explicitly pass the token
+tag:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- uses: Klemensas/action-autotag@stable
+with:
+GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
